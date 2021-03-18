@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeActivity">
+
+    <ImageView
+        android:src="@drawable/bg_jojo_heavens_door"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".QuizActivity">
+
+        <ImageView
+            android:id="@+id/tvQuestion"
+            android:layout_width="350dp"
+            android:layout_height="200dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="100dp"
+            android:paddingTop="80dp"
+            android:paddingBottom="80dp"
+            android:paddingRight="50dp"
+            android:paddingLeft="50dp"
+            android:background="@drawable/jojo_logo_stardust"/>
+
+        <Button
+            android:id="@+id/ansBtn1"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="100dp"
+            android:layout_marginRight="60dp"
+            android:layout_marginLeft="60dp"
+            android:background="@drawable/flame_style"
+            android:text="@string/lv1"
+            android:onClick="onLv1"/>
+
+        <Button
+            android:id="@+id/ansBtn2"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="60dp"
+            android:layout_marginLeft="60dp"
+            android:background="@drawable/flame_style"
+            android:text="@string/lv2"
+            android:onClick="onLv2"/>
+
+        <Button
+            android:id="@+id/ansBtn3"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="60dp"
+            android:layout_marginLeft="60dp"
+            android:background="@drawable/flame_style"
+            android:text="@string/lv3"
+            android:onClick="onLv3"/>
+
+        <Button
+            android:id="@+id/ansBtn4"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="60dp"
+            android:layout_marginLeft="60dp"
+            android:layout_marginBottom="40dp"
+            android:background="@drawable/flame_style"
+            android:text="@string/lv4"
+            android:onClick="onLv4"/>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

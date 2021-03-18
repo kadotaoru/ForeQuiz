@@ -5,4 +5,8 @@
     <string name="incorrect">なぬぅ?!</string>
     <string name="next">次へ</string>
     <string name="game_clear">ゲームクリア！</string>
+    <string name="lv1">レベル１</string>
+    <string name="lv2">レベル２</string>
+    <string name="lv3">レベル３</string>
+    <string name="lv4">レベル４</string>
 </resources>
