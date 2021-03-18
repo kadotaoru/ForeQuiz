@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">ForeQuiz</string>
+    <string name="game_over">ゲームオーバー</string>
+    <string name="correct">正解!!</string>
+    <string name="incorrect">なぬぅ?!</string>
+    <string name="next">次へ</string>
+    <string name="game_clear">ゲームクリア！</string>
 </resources>

@@ -3,7 +3,7 @@
     android:shape="rectangle">
 
     <!-- 背景色 -->
-    <solid android:color="#95935CD6" />
+    <solid android:color="#935CD6" />
 
     <!-- 角の丸み -->
     <corners android:radius="10dp" />
@@ -11,6 +11,6 @@
     <!-- 枠線 width:線の幅、color:線の色 -->
     <stroke
         android:width="2dp"
-        android:color="#00b489" />
+        android:color="#4A148C" />
 
 </shape>

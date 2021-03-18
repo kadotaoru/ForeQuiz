@@ -27,11 +27,11 @@ public class MainActivity extends AppCompatActivity {
 
     String[][] quizData = {
             // {"問題", "正解", "選択肢１", "選択肢２", "選択肢３"}
-            {"これは誰のセリフでしょう？\n「帝王は、この○○○だっ!!!」", "ディアボロ", "DIO", "カーズ", "吉良吉影"},
-            {"これは誰が誰に言ったセリフでしょう？\n「かかったなアホが！」", "ダイアー", "片桐安十郎", "噴上裕也", "ゾンビ"},
-            {"これは誰のセリフでしょう？\n「Wanabeeeeeeee!!」", "スパイス・ガール", "法皇の縁", "マンダム", "ソフト・ウェット"},
-            {"これは誰のセリフでしょう？\n「よく見ろボケがァ、くたばりやがれッ！！」", "億泰", "ヴァニラ・アイス", "エルメェス", "スピード・ワゴン"},
-            {"これは誰のセリフでしょう？\n「味もみておこう」", "岸辺露伴", "ブチャラティ", "アレッシー", "エシディシ"}
+            {"「帝王は、この○○○だっ!!!」", "ディアボロ", "DIO", "カーズ", "吉良吉影"},
+            {"「かかったなアホが！」", "ダイアー", "片桐安十郎", "噴上裕也", "ゾンビ"},
+            {"「Wanabeeeeeeee!!」", "スパイス・ガール", "法皇の縁", "マンダム", "ソフト・ウェット"},
+            {"「よく見ろボケがァ、くたばりやがれッ！！」", "億泰", "ヴァニラ・アイス", "エルメェス", "スピード・ワゴン"},
+            {"「味もみておこう」", "岸辺露伴", "ブチャラティ", "アレッシー", "エシディシ"}
     };
 
 
@@ -96,7 +96,7 @@ public class MainActivity extends AppCompatActivity {
         List<Integer> num = Arrays.asList(1, 2, 3, 4);
         Collections.shuffle(num);
 
-        tvCount.setText("残り" + (5-i) + "問");
+        tvCount.setText("あと" + (5-i) + "問");
         tvQuestion.setText(quizData[i][0]);
         ansBtn1.setText(quizData[i][num.get(0)]);
         ansBtn2.setText(quizData[i][num.get(1)]);
@@ -110,7 +110,7 @@ public class MainActivity extends AppCompatActivity {
         String clickedAns = clickedBtn.getText().toString();  //クリックされたボタンの文字列
 
         if(clickedAns.equals(quizData[i][1])) {
-            clickedBtn.setText("正解！");
+            clickedBtn.setText(R.string.correct);
             //ボタンを無効化、ネクストボタンを有効化
             ansBtn1.setEnabled(false);
             ansBtn2.setEnabled(false);
@@ -128,8 +128,8 @@ public class MainActivity extends AppCompatActivity {
                     i++;
             }
         } else {
-            clickedBtn.setText("不正解！");
-            tvQuestion.setText("Game over");
+            clickedBtn.setText(R.string.incorrect);
+            tvQuestion.setText(R.string.game_over);
 
             //ボタンを無効化
             ansBtn1.setEnabled(false);
